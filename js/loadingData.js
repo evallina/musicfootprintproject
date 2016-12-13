@@ -87,11 +87,11 @@ loadDataSKVenues();
 
 //BASED ON THE SONGKICK SEARCH, THIS FUNCTION GATHERS THE GENRE OF EVERY ARTIST THAT IS ON THE SEARCH (IT GIVES ERROR FOR TOO MANY REQUESTS AT MUSIKKI)
 function loadDataSKVenuesArtist() {
-    d3.json("https://api.songkick.com/api/3.0/metro_areas/" + metroAreaIDNY + "/calendar.json?apikey=" + Songkick_APIkey/*+"&min_date=2017-01-01&max_date=2017-01-05"*/
+    d3.json("https://api.songkick.com/api/3.0/metro_areas/" + metroAreaIDNY + "/calendar.json?apikey=" + Songkick_APIkey+"&jsoncallback=?"/*+"&min_date=2017-01-01&max_date=2017-01-05"*/
         , function (error, jsonDataSK11) {
             nResults = Math.round((jsonDataSK11.resultsPage.totalEntries) / (jsonDataSK11.resultsPage.perPage));
             for (var i = 1; i < nResults; i++) {
-                d3.json("https://api.songkick.com/api/3.0/metro_areas/" + metroAreaIDNY + "/calendar.json?apikey=" + Songkick_APIkey + "&page=" + i, function (error, jsonDataSK3) {
+                d3.json("https://api.songkick.com/api/3.0/metro_areas/" + metroAreaIDNY + "/calendar.json?apikey=" + Songkick_APIkey + "&page=" + i+"&jsoncallback=?", function (error, jsonDataSK3) {
                     var nArrayResults = jsonDataSK3.resultsPage.results.event.length;
                     for (var j = 0; j < nArrayResults; j++) {
 
@@ -117,11 +117,11 @@ function loadDataSKVenuesArtist() {
 
 //THIS FUNCTION GATHERS INFO FROM VENUE REQUEST SONGKICK
 function loadDataSKVenues2() {
-    d3.json("https://api.songkick.com/api/3.0/metro_areas/" + metroAreaIDNY + "/calendar.json?apikey=" + Songkick_APIkey/*+"&min_date=2017-01-01&max_date=2017-01-05"*/
+    d3.json("https://api.songkick.com/api/3.0/metro_areas/" + metroAreaIDNY + "/calendar.json?apikey=" + Songkick_APIkey+"&jsoncallback=?"/*+"&min_date=2017-01-01&max_date=2017-01-05"*/
         , function (error, jsonDataSK) {
             nResults = Math.round((jsonDataSK.resultsPage.totalEntries) / (jsonDataSK.resultsPage.perPage));
             for (var i = 1; i < nResults; i++) {
-                d3.json("https://api.songkick.com/api/3.0/metro_areas/" + metroAreaIDNY + "/calendar.json?apikey=" + Songkick_APIkey + "&page=" + i, function (error, jsonDataSK2) {
+                d3.json("https://api.songkick.com/api/3.0/metro_areas/" + metroAreaIDNY + "/calendar.json?apikey=" + Songkick_APIkey + "&page=" + i+"&jsoncallback=?", function (error, jsonDataSK2) {
                     var nArrayResults = jsonDataSK2.resultsPage.results.event.length;
                     for (var j = 0; j < nArrayResults; j++) {
 
