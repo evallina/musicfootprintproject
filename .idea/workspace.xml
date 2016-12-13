@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1446fe78-490b-4b03-82ac-f183bb31b272" name="Default" comment="" />
+    <list default="true" id="1446fe78-490b-4b03-82ac-f183bb31b272" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/genre-city-map.js" afterPath="$PROJECT_DIR$/js/genre-city-map.js" />
+    </list>
     <ignored path="Midterm_ev00.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -23,13 +25,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="loadingData.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="loadingData.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/loadingData.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="732">
               <caret line="475" column="0" selection-start-line="475" selection-start-column="0" selection-end-line="475" selection-end-column="0" />
               <folding>
                 <element signature="e#0#49#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="genre-city-map.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/genre-city-map.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="400">
+              <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+              <folding>
+                <marker date="1481640313946" expanded="true" signature="2498:2505" ph="—" />
+                <marker date="1481640313946" expanded="true" signature="2515:2521" ph="©" />
               </folding>
             </state>
           </provider>
@@ -124,7 +139,6 @@
         <option value="$PROJECT_DIR$/js/band-badge.js" />
         <option value="$PROJECT_DIR$/js/mainEv.js" />
         <option value="$PROJECT_DIR$/js/tree-viz.js" />
-        <option value="$PROJECT_DIR$/js/genre-city-map.js" />
         <option value="$PROJECT_DIR$/js/bandSearch.js" />
         <option value="$PROJECT_DIR$/BandFootprint.html" />
         <option value="$PROJECT_DIR$/js/map-data.js" />
@@ -132,6 +146,7 @@
         <option value="$PROJECT_DIR$/js/viz-city-impact.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/loadingData.js" />
+        <option value="$PROJECT_DIR$/js/genre-city-map.js" />
       </list>
     </option>
   </component>
@@ -271,11 +286,12 @@
       <workItem from="1481601882663" duration="699000" />
       <workItem from="1481602986975" duration="343000" />
       <workItem from="1481603794960" duration="1862000" />
+      <workItem from="1481640275646" duration="245000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="495908000" />
+    <option name="totallyTimeSpent" value="496153000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1052" height="1057" extended-state="0" />
@@ -510,13 +526,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/genre-city-map.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="485">
-          <caret line="215" column="40" selection-start-line="215" selection-start-column="40" selection-end-line="215" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/BandFootprint.html" />
     <entry file="file://$PROJECT_DIR$/js/bandSearch.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -579,6 +588,17 @@
           <caret line="475" column="0" selection-start-line="475" selection-start-column="0" selection-end-line="475" selection-end-column="0" />
           <folding>
             <element signature="e#0#49#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/genre-city-map.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+          <folding>
+            <marker date="1481640313946" expanded="true" signature="2498:2505" ph="—" />
+            <marker date="1481640313946" expanded="true" signature="2515:2521" ph="©" />
           </folding>
         </state>
       </provider>
