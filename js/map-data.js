@@ -190,7 +190,7 @@ function drawTimeKnots() {
 
 function loadWorldMap(){
 // testing with radiohead
-$.getJSON("http://api.songkick.com/api/3.0/search/artists.json?query="+searchBox+"&apikey=ME5jCBPTyD3l4BW8",
+$.getJSON("https://api.songkick.com/api/3.0/search/artists.json?query="+searchBox+"&apikey=ME5jCBPTyD3l4BW8",
     function (songkickData, err) {
         console.log("////////////////////////NEW REQUEST//////////////////////////////////////////////////////////////")
         data = songkickData.resultsPage.results.artist[0];
@@ -198,10 +198,10 @@ $.getJSON("http://api.songkick.com/api/3.0/search/artists.json?query="+searchBox
         console.log(artistSKid);
         //Request Artis Gigography
         queue()
-            .defer(d3.json,"http://api.songkick.com/api/3.0/artists/"+artistSKid+"/gigography.json?apikey="+Songkick_APIkey)
+            .defer(d3.json,"https://api.songkick.com/api/3.0/artists/"+artistSKid+"/gigography.json?apikey="+Songkick_APIkey)
             //Filter In the last Year
 
-            .defer(d3.json,"http://api.songkick.com/api/3.0/artists/"+artistSKid+"/gigography.json?apikey="+Songkick_APIkey+"&min_date=2015-10-01&max_date=2016-10-01")
+            .defer(d3.json,"https://api.songkick.com/api/3.0/artists/"+artistSKid+"/gigography.json?apikey="+Songkick_APIkey+"&min_date=2015-10-01&max_date=2016-10-01")
 
             .await(function(error,SKdataArtistGigo, SKdataLastYear){
 
